@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@react-email/render": "^0.0.12",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.1.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mailersend": "^2.2.0",
+    "mailgun": "^0.5.0",
+    "mailgun-js": "^0.22.0",
+    "mailgun.js": "^10.2.1",
+    "mongoose": "^5.9.7",
+    "nodemailer": "^6.9.13",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "postmark": "^4.0.2"
+  }
+}
